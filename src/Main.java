@@ -2,10 +2,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        //Declaramos un scanner 
         Scanner sc = new Scanner(System.in);
+        //Declaramos un Map "contactos"
         Map<String, Set<String>> contactos = new HashMap<>();
 
+        //Declaramos un boolean "continuar" para controlar el bucle 
         boolean continuar = true;
+        //A traves de un bucle while, le pedimos al usuario introducir contactos
+        //que se van añadiendo al Map y se comprueba si se si ya esta incluido en 
+        //la lista 
         while (continuar) {
             System.out.println("Introduce el contacto (fin para terminar): ");
             String contacto = sc.nextLine();
